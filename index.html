@@ -1,11 +1,71 @@
 <!DOCTYPE html>
     <body>
+
+        <style>
+            /* Dropdown Button */
+            .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            }
+
+            /* The container <div> - needed to position the dropdown content */
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            /* Dropdown Content (Hidden by Default) */
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {display: block;}
+
+            /* Change the background color of the dropdown button when the dropdown content is shown */
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        </style>
+
+
         <h1 id="TITLE"> MAIN PAGE </h1>
-        <a href="second.html?player=PLAYERNAME" id="PLAYER_LINK"> Player Page </a>
-        <br>
-        <a href="second.html?school=schoolName" id="SCHOOL_LINK"> Team Page </a>
-        <br>
-        <a href="second.html" id="SCHOOL_LINK"> Prediction Page </a>
+
+        <div class="dropdown">
+            <button class="dropbtn">CFB Player Ratings</button>
+            <div class="dropdown-content">
+                <a href="player_rating.html?year=2021">2021</a>
+                <a href="player_rating.html?year=2020">2020</a>
+                <a href="player_rating.html?year=2019">2019</a>
+            </div>         
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="team.html?team=Alabama" id="SCHOOL_LINK"> Team Page </a> </button>      
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="prediction.html" id="SCHOOL_LINK"> Team Page </a> </button>      
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="swimming_main_page.html" id="SWIMMING_MAIN_LINK"> Swimming Page </a>  </button>      
+        </div>
+        <br>   
     </body>
     <script>
         //Code to change the href of a page 
