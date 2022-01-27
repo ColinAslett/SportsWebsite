@@ -19,15 +19,47 @@
             p{
                 text-align: center;
             }
+
+            a{
+                color:blue;
+                text-decoration: none; 
+                background-color: none;
+            }
         </style>
 
         <h1 id="TITLE"> SECOND PAGE </h1>
 
+        <div style="text-align: center;"> 
+            <a href="player_rating.html?year=2021"> 2021 </a>
+            <a href="player_rating.html?year=2020"> 2020 </a>
+            <a href="player_rating.html?year=2019"> 2019 </a>
+            <a href="player_rating.html?year=2018"> 2018 </a>
+        </div>
+
+
         <p> DESCRIPTION HERE </p>
 
-        <table id="QB_TABLE" style="display: inline-flex;width: 500px;">  
+        <label id="LABEL"> Search By Player Name: </label>
 
-        </table>            
+        <input type="text" id="BTN_TEXT"> 
+
+        <select name="options" id="SELECT_MENU"> 
+            <option value="Team"> Team </option>
+            <option value="Name"> Name </option>
+        </select>
+
+        <button id="BTN"> Submit </button>
+
+
+        <br>
+
+        <ul id="BULLETED_LIST">
+
+        </ul>
+
+        
+
+        <table id="QB_TABLE" style="display: inline-flex;width: 500px;">  </table>            
         <table id="WR_TABLE" style="display: inline-flex;width: 500px;" > </table>
         <table id="RB_TABLE" style="display: inline-flex;" > 
         </table>
@@ -43,13 +75,27 @@
         var year = urlParams.get("year");
         document.getElementById("TITLE").innerHTML = year + " Player Ratings";
 
-        
+        //Getting the Data from the CSV's on Github
         const qb_file = "https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/PlayerData/StatSheet%20-%20QB_" + year + ".csv";
         getData(qb_file,"QB");
         const wr_file = "https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/PlayerData/StatSheet%20-%20WR_" + year + ".csv";
         getData(wr_file,"WR");
         const rb_file = "https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/PlayerData/StatSheet%20-%20RB_" + year + ".csv";
         getData(rb_file,"RB");
+
+
+        //Data Structures for Players
+        const player_list = [];
+        PLAYER = class{
+            constructor(name,position,rating,school){
+                this.name = name;
+                this.position = position;
+                this.rating = rating;
+                this.school = school;
+            }
+        }
+
+
         async function getData(file_name,file_type){
             //"https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/PlayerData/StatSheet%20-%20QB_2021.csv"
             const response = await fetch(file_name);
@@ -63,6 +109,10 @@
             //table_1 += "<caption> " + file_type + " Table </caption>";
             for(let i = 0;i < rows.length;i++){
                 let split_str = rows[i].split(",");
+                const pp = new PLAYER(split_str[0],file_type,split_str[2],split_str[1]);
+                //console.log(pp);
+                player_list.push(pp);
+
                 let str = "<tr> <th> " + split_str[0] + " </th> <th> " + split_str[1] + "</th> <th> " + split_str[2] + " </th> </tr>";
                 table_1 += str;
             }
@@ -77,9 +127,46 @@
                 document.getElementById("RB_TABLE").innerHTML += table_1;
             }
 
-            //console.log(rows);
         }
 
+
+
+        //Button stuff
+        BTN.addEventListener("click",buttonFunction);
+        function buttonFunction(){
+
+            let user_input = document.getElementById("BTN_TEXT").value;
+            let type_of_search = document.getElementById("SELECT_MENU").value;
+
+            var addToList = "";
+            console.log(type_of_search);
+            for(let i = 0;i < player_list.length;i++){
+                let lower_case = "";
+                if(type_of_search == "Team"){
+                    lower_case = player_list[i].school;
+                    lower_case = lower_case.toLowerCase();
+                }
+                else if(type_of_search == "Name"){
+                    lower_case = player_list[i].name;
+                    lower_case = lower_case.toLowerCase();
+                }
+
+                if(lower_case.includes(user_input)){
+                    console.log(user_input + " , " + type_of_search);  
+                    addToList += "<li> " + player_list[i].name  + " , " + player_list[i].position + " , " + player_list[i].school + " , Rating: " + player_list[i].rating + "</li>"; 
+                }
+            }
+            if(addToList == ""){
+                //EMPTY, none found, probably should give an error message
+                document.getElementById("BULLETED_LIST").innerHTML = " No Entries Found Containing: " + user_input;
+            }
+            else{
+                document.getElementById("BULLETED_LIST").innerHTML = addToList;
+            }
+
+            //console.log(document.getElementById("BTN_TEXT").value);
+
+        }
 
 
     </script>
