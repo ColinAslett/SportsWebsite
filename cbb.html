@@ -15,7 +15,7 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                font-size: 17px;
+                font-size: 32px;
             }
 
             /* Change the color of links on hover */
@@ -38,7 +38,19 @@
                 background-color: none;
             }
 
+            /* BOX CSS */
 
+            .box{
+                border: 5px solid black;
+                border-radius: 5px;
+                border-top-right-radius: 10% 30%;
+                background-color: lightgray;
+            }
+
+            h1{
+                font-size: 60px;
+                text-align: center;
+            }
 
         </style>
 
@@ -53,10 +65,51 @@
         <br>
         <br>
         <br>
-        <p> CBB Main Page </p>
+
+        <h1> CBB Main Page </h1>
 
 
-        <p id="test" style="text-align: center;"> Introduction Paragraph Here </p>
+        <p id="test" style="text-align: center;"> Game Predictions below </p>
+
+        <!-- justify-content: space-between; Maybe-->
+        <div class="container" style="display: flex; height: 75px;">
+            <div class="box" style="flex-grow: 1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow: 1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+        </div>
+        <br> 
+        <div class="container" style="display: flex; height: 75px;">
+            <div class="box" style="flex-grow: 1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow: 1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+            <div class="box" style="flex-grow:1;margin-right: 2%;"> 
+                <p style="text-align: center;"> &nbsp; <b> TEAM 1 </b> &nbsp; SCORE 1 <br> &nbsp; <b> TEAM 2 </b> &nbsp; SCORE 2 </p>
+            </div>
+        </div>
+
+
+
     </body>
     <script>
         //https://www.sitepoint.com/get-url-parameters-with-javascript/
