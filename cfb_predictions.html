@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+    <body>
+        <style>
+           /* MENU BAR */
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .subnav{
+                background-color: darkgrey;
+                overflow: hidden;               
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 32px;
+            }
+
+            .subnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;               
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .subnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: blue;
+                color: white;
+            }
+            .subnav a.active {
+                background-color: gray;
+                color: white;
+            }
+
+            /* Other CSS Styling */
+
+            a{
+                color:white;
+                text-decoration: none; 
+                background-color: none;
+            }
+
+            th{
+                border-collapse: collapse;
+                font-size: 20px;
+                font-weight: bold;
+                background: lightblue;
+            }
+            td{
+                border-collapse: collapse;
+                font-size: 18px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            .Main_Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+        </style>
+    
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="nhl.html">NHL</a>
+            <a href="cbb.html">CBB</a>
+            <a href="NFL.html">NFL</a>
+            <a class="active" href="cfb_predictions.html">CFB</a>
+            <a href="swimming_main_page.html">Swimming</a>
+        </div>
+        <div class="subnav">
+            <a href="cfb_predictions.html">Game Predictions</a>
+            <a href="cfb_rankings.html?year=2021">Rankings</a>
+            <a href="player_rating.html?year=2021">Player Ratings</a>
+            <a href="cfb_ML.html"> Model Design </a>
+        </div>
+
+
+
+        <h1 style="text-align: center;"> CFB Game Predictions </h1>
+
+        <div style="margin-left: auto;margin-right: auto;">
+            <marquee direction = "left" height = "50" width = "100%" color: red> Latest College Football News: Jim Harbuagh Staying At Michigan </marquee>
+        </div>
+
+        <div style="width: 40%;margin-left: auto;margin-right: auto;">
+            <p id="test" style="text-align: center;"> This section shows what the 3 machine learning models are predicting for specific games. A further explanation of the machine learning models and what 
+            variables they use can be found at: </p>
+        </div>
+
+
+
+
+        <hr style="height: 8px;background-color: black;">
+        <br>
+        <h2 style="text-align: center;"> Conference Championship Games </h2>
+        <!-- justify-content: space-between; Maybe-->
+        <table class="Main_Table">
+           <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
+           <tr> <td> <b> Western Kentucky </b> </td> <td> 36 </td> <td> 31 </td> <td> 34 </td></tr>
+           <tr> <td> <b> UTSA </b> </td> <td> 34 </td> <td> 31 </td> <td> 31 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Oregon </b> </td> <td> 29 </td> <td> 24 </td> <td> 30.5 </td></tr>
+           <tr> <td> <b> Utah </b> </td> <td> 31 </td> <td> 31 </td> <td> 34.5 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Baylor </b> </td> <td> 22 </td> <td> 14 </td> <td> 25 </td></tr>
+           <tr> <td> <b> Oklahoma State </b> </td> <td> 29 </td> <td> 31 </td> <td> 30 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Utah State </b> </td> <td> 21 </td> <td> 23 </td> <td> 10 </td></tr>
+           <tr> <td> <b> San Diego State </b> </td> <td> 25 </td> <td> 25 </td> <td> 24 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Appalachian State </b> </td> <td> 36 </td> <td> 31 </td> <td> 34 </td></tr>
+           <tr> <td> <b> Louisiana </b> </td> <td> 29 </td> <td> 14 </td> <td> 26 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Georiga </b> </td> <td> 31 </td> <td> 32 </td> <td> 31 </td></tr>
+           <tr> <td> <b> Alabama </b> </td> <td> 26 </td> <td> 19 </td> <td> 17 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Houston </b> </td> <td> 26 </td> <td> 24 </td> <td> 25 </td></tr>
+           <tr> <td> <b> Cincinnati </b> </td> <td> 24 </td> <td> 14 </td> <td> 25 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Michigan </b> </td> <td> 24.5 </td> <td> 24 </td> <td> 26 </td></tr>
+           <tr> <td> <b> Iowa </b> </td> <td> 17.5 </td> <td> 14 </td> <td> 17 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Pittsburgh </b> </td> <td> 42 </td> <td> 31 </td> <td> 47 </td></tr>
+           <tr> <td> <b> Wake Forest </b> </td> <td> 35 </td> <td> 31 </td> <td> 33 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> USC </b> </td> <td> 25 </td> <td> 31 </td> <td> 30 </td></tr>
+           <tr> <td> <b> California </b> </td> <td> 29 </td> <td> 31 </td> <td> 32 </td></tr>
+        </table>
+        <br> 
+        <h2 style="text-align: center;"> November 27 Games </h2>
+        <!-- justify-content: space-between; Maybe-->
+        <table class="Main_Table">
+           <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
+           <tr> <td> <b> Ohio State </b> </td> <td> 37 </td> <td> 31 </td> <td> 38 </td></tr>
+           <tr> <td> <b> Michigan </b> </td> <td> 28 </td> <td> 24 </td> <td> 28 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Nebraska </b> </td> <td> 24 </td> <td> 14 </td> <td> 23.5 </td></tr>
+           <tr> <td> <b> Iowa </b> </td> <td> 18 </td> <td> 14 </td> <td> 16.5 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Oklahoma State </b> </td> <td> 29 </td> <td> 31 </td> <td> 31 </td></tr>
+           <tr> <td> <b> Oklahoma </b> </td> <td> 26 </td> <td> 24 </td> <td> 24 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Oregon </b> </td> <td> 30 </td> <td> 31 </td> <td> 31 </td></tr>
+           <tr> <td> <b> Oregon State </b> </td> <td> 31 </td> <td> 24 </td> <td> 27 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Florida </b> </td> <td> 37 </td> <td> 31 </td> <td> 32 </td></tr>
+           <tr> <td> <b> Florida State </b> </td> <td> 31 </td> <td> 31 </td> <td> 32 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> East Carolina </b> </td> <td> 24 </td> <td> 31 </td> <td> 34 </td></tr>
+           <tr> <td> <b> Cincinnati </b> </td> <td> 34 </td> <td> 24 </td> <td> 23 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Mississippi State </b> </td> <td> 32 </td> <td> 31 </td> <td> 36 </td></tr>
+           <tr> <td> <b> Ole Miss </b> </td> <td> 35 </td> <td> 38 </td> <td> 33 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Texas </b> </td> <td> 28 </td> <td> 31 </td> <td> 26 </td></tr>
+           <tr> <td> <b> Kansas State </b> </td> <td> 37 </td> <td> 31 </td> <td> 37 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Washington </b> </td> <td> 26 </td> <td> 17 </td> <td> 23 </td></tr>
+           <tr> <td> <b> Washington State </b> </td> <td> 15 </td> <td> 17 </td> <td> 29 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Baylor </b> </td> <td> 35 </td> <td> 24 </td> <td> 35 </td></tr>
+           <tr> <td> <b> Texas Tech </b> </td> <td> 27 </td> <td> 31 </td> <td> 32 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Georgia </b> </td> <td> 34 </td> <td> 31 </td> <td> 39 </td></tr>
+           <tr> <td> <b> Georgia Tech </b> </td> <td> 19 </td> <td> 14 </td> <td> 17 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Boston College </b> </td> <td> 36 </td> <td> 31 </td> <td> 35 </td></tr>
+           <tr> <td> <b> Wake Forest </b> </td> <td> 34 </td> <td> 31 </td> <td> 33 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Notre Dame </b> </td> <td> 37 </td> <td> 31 </td> <td> 39 </td></tr>
+           <tr> <td> <b> Stanford </b> </td> <td> 21 </td> <td> 21 </td> <td> 21 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> BYU </b> </td> <td> 39 </td> <td> 31 </td> <td> 40 </td></tr>
+           <tr> <td> <b> USC </b> </td> <td> 31 </td> <td> 31 </td> <td> 31 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Texas A&M </b> </td> <td> 30 </td> <td> 31 </td> <td> 28 </td></tr>
+           <tr> <td> <b> LSU </b> </td> <td> 22 </td> <td> 17 </td> <td> 23 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Minnesota </b> </td> <td> 24 </td> <td> 14 </td> <td> 21 </td></tr>
+           <tr> <td> <b> Wisconsin </b> </td> <td> 23 </td> <td> 14 </td> <td> 25 </td></tr>
+           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+           <tr> <td> <b> Michigan State </b> </td> <td> 25 </td> <td> 31 </td> <td> 25 </td></tr>
+           <tr> <td> <b> Penn State </b> </td> <td> 26 </td> <td> 20 </td> <td> 26 </td></tr>
+        </table>
+
+        <br>
+        <br>
+
+
+
+    </body>
+    <script>
+        //https://www.sitepoint.com/get-url-parameters-with-javascript/
+ </script>
+</html>
