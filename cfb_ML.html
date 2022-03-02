@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+    <body>
+        <style>
+           /* MENU BAR */
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .subnav{
+                background-color: darkgrey;
+                overflow: hidden;               
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 32px;
+            }
+
+            .subnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;               
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .subnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: blue;
+                color: white;
+            }
+            .subnav a.active {
+                background-color: gray;
+                color: white;
+            }
+
+            /* Other CSS Styling */
+
+            a{
+                color:white;
+                text-decoration: none; 
+                background-color: none;
+            }
+
+            th{
+                border-collapse: collapse;
+                font-size: 20px;
+                font-weight: bold;
+                background: lightblue;
+            }
+            td{
+                border-collapse: collapse;
+                font-size: 18px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            .Main_Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+            .Not_Header{
+                color: blue;
+
+            }
+        </style>
+    
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="nhl.html">NHL</a>
+            <a href="cbb.html">CBB</a>
+            <a href="NFL.html">NFL</a>
+            <a class="active" href="cfb_predictions.html">CFB</a>
+            <a href="swimming_main_page.html">Swimming</a>
+        </div>
+        <div class="subnav">
+            <a href="cfb_predictions.html">Game Predictions</a>
+            <a href="cfb_rankings.html?year=2021">Rankings</a>
+            <a href="player_rating.html?year=2021">Player Ratings</a>
+            <a href="cfb_ML.html"> Model Design </a>
+        </div>
+
+
+        <h1 style="text-align: center;"> Machine Learning & Ranking Algorithm Details </h1>
+
+        <div style="width: 50%;margin-left: auto;margin-right: auto;">
+            <p id="test" style="text-align: center;"> This section will describe how the machine learning models were built, including what variables they use. The ranking algorithm will also be discussed. </p>
+        </div>
+
+        <hr style="height: 6px;background-color: black;">
+
+        <h2 style="text-align: center; font-size: 24px;font-weight: bold;"> Machine Learning Models</h2>
+
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
+            <p id="test" style="text-align: center;"> Three different machine learning models were chosen to predict scores: </p>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Gradient_boosting" class="Not_Header"> <u> Gradient Boosted Tree (G.B) </u> </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" class="Not_Header"> <u> Principal Component Analysis (PCA) </u> </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Support-vector_machine" class="Not_Header"> <u> Support Vector Machines (SVM) </u> </a>
+            </li>
+            <p> All models were trained on roughly 10,000 college football games from the past 10 years. A multitiude of varibles were created and carefully trimmed down to 20 to accurately reflect the team's offensive capabailites, not only in terms of 
+                yards per rush/pass but with factors including tempo and explosiveness. The models also incorporate each team's defensive capabilities, looking at how well the defenses can stop explosive plays along with other factors. A full list of all factors
+                that the models consider is below:
+            </p>
+            <p> <b> Offensive Metrics </b> </p>
+            <li>
+                Average Yards per Rush
+            </li>
+            <li>
+                Average Yards per Pass Attempt
+            </li>
+            <li>
+                Average Tempo(How many plays is the offense running per game)
+            </li>
+            <li>
+                Average number of explosve plays broken down into 3 distances(10+ yard, 25+ yard, 40+ yard plays) 
+            </li>
+            <li>
+                Third Down Success Rate
+            </li>
+            <li>
+                First Down Success Rate(At least 5 yards)
+            </li>
+            <li>
+                Average Interceptions thrown per game
+            </li>
+            <li>
+                Red Zone Touchdown Rate
+            </li>
+            <li>
+                Red Zone Field Goal Rate
+            </li>
+            <p> <b> Defensive Metrics </b> </p>  
+            <li>
+                Average Yards per Rush Attempt Conceded
+            </li>       
+            <li>
+                Average Yards per Pass Attempt Conceded
+            </li>  
+            <li>
+                Average number of explosve plays Conceded, broken down again into 3 different distances
+            </li>
+            <li>
+                Third Down Success Rate Conceded
+            </li>
+            <li>
+                Average Interceptions Conceded
+            </li>
+            <li>
+                Red Zone Defense Rate, broken down into TD's Conceded and Field Goals Conceded
+            </li>
+        </div>
+        <br>
+
+        <hr style="height: 6px;background-color: black;">
+
+        <h2 style="text-align: center; font-size: 24px;font-weight: bold;"> Team Ranking Algorithm </h2>
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
+            <p style="text-align: center;"> The main algorithm used for ranking teams is Glicko 2 where I adapted it for college football. Ratings for each team is reset at the start at each season at <b> 1500 </b> with a standard deviation of <b> 350 </b>.
+                A big advantage of this ranking algorithm is that it gives a standard deviation
+            on each teams rating, over time as more games are played the rating deviation gets smaller to represent that the model is getting more confident on what is the teams true rating. The paper that explains the algorithm
+            in great detail can be found <a href="http://www.glicko.net/glicko/glicko2.pdf" class="Not_Header"> <u> Here </u> </a></p>
+        </div>
+        
+    </body>
+    <script>
+        //https://www.sitepoint.com/get-url-parameters-with-javascript/
+    </script>
+</html>
