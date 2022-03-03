@@ -60,18 +60,6 @@
                 background-color: none;
             }
 
-            th{
-                border-collapse: collapse;
-                font-size: 20px;
-                font-weight: bold;
-                background: lightblue;
-            }
-            td{
-                border-collapse: collapse;
-                font-size: 18px;
-                font-weight: normal;
-                text-align: center;
-            }
 
             .Main_Table{
                 width: 80%;
@@ -85,8 +73,20 @@
             }
             .Not_Header{
                 color: blue;
-
             }
+
+
+            th, td {
+                font-size: normal;
+                font-weight: normal;
+            }
+            th{
+                border: 1px solid black;
+            }
+            table{
+                border: 1px solid black;
+            }
+
         </style>
     
         <div class="topnav">
@@ -126,57 +126,70 @@
             <li>
                 <a href="https://en.wikipedia.org/wiki/Support-vector_machine" class="Not_Header"> <u> Support Vector Machines (SVM) </u> </a>
             </li>
-            <p> All models were trained on roughly 10,000 college football games from the past 10 years. A multitiude of varibles were created and carefully trimmed down to 20 to accurately reflect the team's offensive capabailites, not only in terms of 
-                yards per rush/pass but with factors including tempo and explosiveness. The models also incorporate each team's defensive capabilities, looking at how well the defenses can stop explosive plays along with other factors. A full list of all factors
-                that the models consider is below:
+            <p> All models were trained on roughly 10,000 college football games from the past 10 years, exlcuding games that occured in the 2020-2021 season because of COVID-19's big impact on the sport. A multitiude of varibles were created and carefully trimmed down to 20 to accurately reflect the team's offensive capabailites, not only in terms of 
+                yards per rush/pass but with factors including tempo and explosiveness. The models also incorporate each team's defensive capabilities, looking at how well the defenses can stop explosive plays along with other factors. The model's <b> does not factor in injuries</b>, they assume each team is performing at its average performance so far this year.
+                A full list of all factors that the models consider is below:
             </p>
-            <p> <b> Offensive Metrics </b> </p>
-            <li>
-                Average Yards per Rush
-            </li>
-            <li>
-                Average Yards per Pass Attempt
-            </li>
-            <li>
-                Average Tempo(How many plays is the offense running per game)
-            </li>
-            <li>
-                Average number of explosve plays broken down into 3 distances(10+ yard, 25+ yard, 40+ yard plays) 
-            </li>
-            <li>
-                Third Down Success Rate
-            </li>
-            <li>
-                First Down Success Rate(At least 5 yards)
-            </li>
-            <li>
-                Average Interceptions thrown per game
-            </li>
-            <li>
-                Red Zone Touchdown Rate
-            </li>
-            <li>
-                Red Zone Field Goal Rate
-            </li>
-            <p> <b> Defensive Metrics </b> </p>  
-            <li>
-                Average Yards per Rush Attempt Conceded
-            </li>       
-            <li>
-                Average Yards per Pass Attempt Conceded
-            </li>  
-            <li>
-                Average number of explosve plays Conceded, broken down again into 3 different distances
-            </li>
-            <li>
-                Third Down Success Rate Conceded
-            </li>
-            <li>
-                Average Interceptions Conceded
-            </li>
-            <li>
-                Red Zone Defense Rate, broken down into TD's Conceded and Field Goals Conceded
-            </li>
+
+            <table style="display: inline-flex;">
+                <tr>
+                    <th> <b> Offense Metrics </b> </th>
+                </tr>
+                <tr>
+                    <td> Average Yards per Rush </td>
+                </tr>
+                <tr>
+                    <td> Average Yards per Pass Attempt </td>
+                </tr>
+                <tr>
+                    <td> Average Tempo(# of Plays run per game) </td>
+                </tr>
+                <tr>
+                    <td> Average Explosiveness* </td>
+                </tr>
+                <tr>
+                    <td> Third Down Success Rate </td>
+                </tr>
+                <tr>
+                    <td> First Down Success Rate </td>
+                </tr>
+                <tr>
+                    <td> Average Interceptions Thrown </td>
+                </tr>
+                <tr>
+                    <td> Red Zone Touchdown Rate </td>
+                </tr>
+                <tr>
+                    <td> Red Zone Field Goal Rate </td>
+                </tr>
+            </table>
+            <table style="display: inline-flex;">
+                <tr>
+                    <th> <b> Defense Metrics </b> </th>
+                </tr>
+                <tr>
+                    <td> Average Yards per Rush Conceded </td>
+                </tr>
+                <tr>
+                    <td> Average Yards per Pass Attempt Conceded </td>
+                </tr>
+                <tr>
+                    <td> Average Explosiveness Conceded* </td>
+                </tr>
+                <tr>
+                    <td> Third Down Success Rate Conceded </td>
+                </tr>
+                <tr>
+                    <td> Average Interceptions Caused </td>
+                </tr>
+                <tr>
+                    <td> Red Zone Defense Rate </td>
+                </tr>
+            </table>
+
+            <p> * Explosiveness is broken down into 3 categories, plays that generate more than 10 yards, 25 yards, and 40 yards. </p>
+            <p> <b> Note on P5/G5 Difference: </b> While I did not include whether a team was P5 or not in the models, I did do early runs with it as a variable. Early versions of the models
+            suggested that the difference between an average P5 team and an average G5 team was roughly 8 points. </p>
         </div>
         <br>
 
