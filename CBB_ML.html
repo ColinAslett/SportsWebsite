@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <body>
+        <style>
+            /* MENU BAR */
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #333;
+                overflow: hidden;
+            }
+
+            .subnav{
+                background-color: darkgrey;
+                overflow: hidden;               
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 32px;
+            }
+
+            .subnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;               
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .subnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: blue;
+                color: white;
+            }
+            .subnav a.active {
+                background-color: gray;
+                color: white;
+            }
+
+            /* Other CSS Styling */
+
+            a{
+                color:white;
+                text-decoration: none; 
+                background-color: none;
+            }
+
+            /* BOX CSS */
+
+            .box{
+                border: 5px solid black;
+                border-radius: 5px;
+                border-top-right-radius: 10% 30%;
+                background-color: lightgray;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+
+            .Main_Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+
+            .Not_Header{
+                color: blue;
+            }
+
+            th, td {
+                font-size: normal;
+                font-weight: normal;
+            }
+            th{
+                border: 1px solid black;
+            }
+            table{
+                border: 1px solid black;
+            }
+        </style>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="nhl.html">NHL</a>
+            <a class="active" href="cbb.html">CBB</a>
+            <a href="NFL.html">NFL</a>
+            <a href="cfb_predictions.html">CFB</a>
+            <a href="swimming_main_page.html">Swimming</a>
+        </div>
+        <div class="subnav">
+            <a href="cbb.html">Game Predictions</a>
+            <a href="cbb_march_madness.html">March Madness</a>
+            <a href="cbb_ML.html">Model Design</a>
+        </div>
+
+
+        <h1> College Basketball Machine Learnign Model Design </h1>
+
+        <div style="width: 50%;margin-left: auto;margin-right: auto;">
+            <p id="test" style="text-align: center;"> This section will describe how the machine learning models were built, including what variables they use. </p>
+        </div>
+
+        <hr style="height: 6px;background-color: black;">
+
+        <h2 style="text-align: center; font-size: 24px;font-weight: bold;"> Machine Learning Models</h2>
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
+            <p id="test" style="text-align: center;"> Three different machine learning models were chosen to predict scores: </p>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Gradient_boosting" class="Not_Header"> <u> Gradient Boosted Tree (G.B) </u> </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" class="Not_Header"> <u> Principal Component Analysis (PCA) </u> </a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Random_forest" class="Not_Header"> <u> Random Forest (R.F) </u> </a>
+            </li>
+            <p> All models were trained on roughly 25,000 college football games from the past 3 years, exlcuding games that occured in the 2020-2021 season because of COVID-19's big impact on the sport. A multitiude of varibles were created and carefully trimmed down to roughly 12 variables.
+                A majority of the variables represent the offensive part of the basketball teams, however there are several defense factors included. The model's <b> does not factor in injuries</b>, they assume each team is performing at its average performance so far this year.
+                A full list of all factors that the models consider is below:
+            </p>
+
+            <table style="display: inline-flex;">
+                <tr>
+                    <th> <b> Model Variables </b> </th>
+                </tr>
+                <tr>
+                    <td> Team Average 2-Point Percentage </td>
+                </tr>
+                <tr>
+                    <td> Team Average 3-Point Percentage </td>
+                </tr>
+                <tr>
+                    <td> Team Average Free Throw Percentage </td>
+                </tr>
+                <tr>
+                    <td> Team Average Offensive Rebounds </td>
+                </tr>
+                <tr>
+                    <td> Team Average Defensive Rebounds </td>
+                </tr>
+                <tr>
+                    <td> Team Average Steals </td>
+                </tr>
+                <tr>
+                    <td> Team Average Blocks </td>
+                </tr>
+                <tr>
+                    <td> Team Average Turnovers </td>
+                </tr>
+                <tr>
+                    <td> Average Shot Attempts per Game </td>
+                </tr>
+            </table>
+            <br>
+            <p> After the models are given the data with the above variables, they decide what variables are most important. For the random forest model, a variable importance plot is given below in <b> Figure 1 </b> showing 
+                each variables importance. The chart on the left, <b> %IncMSE </b>, describes by how much the accuracy of the model will decrease if the varible is not included in the model, higher scores indicate higher importance.
+                The chart on the right, <b> IncNodePurity</b>, describes how important a specific variable is for calculating the splits in the random forest trees with higher scores indicating higher importance of the variable to the model. </p>
+                
+            <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/CBB_RANDOM_FOREST_VARIMP.png"> 
+            
+            <p> <b> Figure 1)</b> Random Forest Variable Importance Plot </p>
+            <br>
+            <p> Another type of plot that shows how important a variable is to the models is the "Minimal Depth and Minimum Chart" as shown in <b> Figure 2 </b>. The chart describes how close a variable is to the root of the trees, with variables that are closer to the root of the tree 
+            being more important to the model. The numbers represent variables that are x splits away from the root, on average. The color range for each variable describes the distribution of how close the variable is to the root of the tree. </p>
+            <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/CBB_Min_Depth.png"> 
+
+        </div>
+    </body>
+</html>
