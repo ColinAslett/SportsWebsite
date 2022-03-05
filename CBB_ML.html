@@ -99,6 +99,13 @@
             table{
                 border: 1px solid black;
             }
+
+
+            .image_div{
+                display: block;
+                float: left;
+            }
+
         </style>
 
         <div class="topnav">
@@ -185,7 +192,28 @@
             <p> Another type of plot that shows how important a variable is to the models is the "Minimal Depth and Minimum Chart" as shown in <b> Figure 2 </b>. The chart describes how close a variable is to the root of the trees, with variables that are closer to the root of the tree 
             being more important to the model. The numbers represent variables that are x splits away from the root, on average. The color range for each variable describes the distribution of how close the variable is to the root of the tree. </p>
             <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/CBB_Min_Depth.png"> 
-
+            <br>
+            <p> The plots below depict the marginal effect of each variable while "integrating" out the other variables. In other words, this describes what the model would think the score would be if the given variable was a certain value while holding
+                all other variables at a constant value(Average of the dataset). These plots help show the relationship between the variable and the score, for example, the higher the 2_pt_pct for the team is the higher their predicted score will be in their next game.
+                The y-axis represents the predicted score, while the x-axis represents the variable's potential values. </p>
         </div>
+
+        <br>
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_2pt_pct.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_3pt_pct.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_blocks.png" style="display: inline-flex;width: 33%;">
+        <br>
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_def_rebound.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_free_throw.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_off_rebound.png" style="display: inline-flex;width: 33%;">
+        <br>
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_opp_blocks.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_opp_steals.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_opp_turnovers.png" style="display: inline-flex;width: 33%;">
+        <br>
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_shots.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_steals.png" style="display: inline-flex;width: 33%;"> 
+        <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_turnovers.png" style="display: inline-flex;width: 33%;">
+        <br>
     </body>
 </html>
