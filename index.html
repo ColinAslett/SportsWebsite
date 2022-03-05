@@ -6,6 +6,8 @@
             .topnav {
                 background-color: black;
                 overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             /* Style the links inside the navigation bar */
@@ -15,12 +17,12 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                font-size: 32px;
+                font-size: 34px;
             }
 
             /* Change the color of links on hover */
             .topnav a:hover {
-                background-color: lightblue;
+                background-color: darkgray;
                 color: black;
             }
 
@@ -38,20 +40,51 @@
             }
 
 
-            
+
+            /**/
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-child {
+                flex: 1;
+                border: 2px solid black;
+            }  
+
+            .flex-child:first-child {
+                margin-right: 20px;
+            }   
+
         </style>
-        <div class="title">
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg">
-        </div>
-        <br>
+        
         <div class="topnav">
-            <a class="active" href="index.html">Home</a>
+            <a class="logo" href="index.html" style="background-color:white;font-size: 32px;color: black">Sharp Odd<b>Ƶ</b> </a>
             <a href="nhl.html">NHL</a>
             <a href="cbb.html">CBB</a>
             <a href="NFL.html">NFL</a>
             <a href="cfb_predictions.html">CFB</a>
-            <a href="swimming_main_page.html">Swimming</a>
+            <a href="swimming.html">Swimming</a>
+            <a href="contact.html"> Contact </a>
         </div>
+        <br>
+        <br>
+        <p style="text-align: center;"> Logo Here</p>
+        <br>
+        <br>
+
+        <div class="flex-container">
+
+            <div class="flex-child magenta;">
+              <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming CBB Games </p>
+              <p> Only put ~4 games here, encourage them to explore the page </p>
+            </div>
+            
+            <div class="flex-child green">
+                <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming NHL Games </p>
+            </div>
+            
+          </div>
+
 
 
 
