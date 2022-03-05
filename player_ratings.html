@@ -66,10 +66,17 @@
 
 
 
-            th, td {
-                border: 1px solid black;
-                font-size: small;
+            th{
+                border-collapse: collapse;
+                font-size: 20px;
+                font-weight: bold;
+                background: lightblue;
+            }
+            td{
+                border-collapse: collapse;
+                font-size: 16px;
                 font-weight: normal;
+                text-align: center;
             }
             tr:first-child{
                 column-span: 3;
@@ -100,7 +107,7 @@
             <a href="nhl.html">NHL</a>
             <a href="cbb.html">CBB</a>
             <a href="NFL.html">NFL</a>
-            <a class="active" href="cfb.html">CFB</a>
+            <a class="active" href="cfb_predictions.html">CFB</a>
             <a href="swimming_main_page.html">Swimming</a>
         </div>
 
@@ -109,13 +116,24 @@
             <a href="player_rating.html?year=2020"> 2020 </a>
             <a href="player_rating.html?year=2019"> 2019 </a>
             <a href="player_rating.html?year=2018"> 2018 </a>
+            <a href="player_rating.html?year=2017"> 2017 </a>
+            <a href="player_rating.html?year=2016"> 2016 </a>
+            <a href="player_rating.html?year=2015"> 2015 </a>
+            <a href="player_rating.html?year=2014"> 2014 </a>
+            <a href="player_rating.html?year=2013"> 2013 </a>
+            <a href="player_rating.html?year=2012"> 2012 </a>
+            <a href="player_rating.html?year=2011"> 2011 </a>
+            <a href="player_rating.html?year=2010"> 2010 </a>
         </div>
 
 
         <h1 id="TITLE"> SECOND PAGE </h1>
 
-
-        <p> DESCRIPTION HERE </p>
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
+            <p> This page goes over player ratings for three different positions: Quaterback, Running Back, and Wide Reciever. Each position has its own method to calculating a players rating, so 
+                a QB with a rating of 3.0 is not necessairly better than a RB with a rating of 2.5. There is a minimum criteria for players to qualify for the list, for QB's they need at least 90 pass attempts, while
+                for WR's and RB's they need at least 25 plays with the ball in their possession. </p>
+        </div>
 
         <label id="LABEL"> Search By Player Name: </label>
 
@@ -137,10 +155,9 @@
 
         
 
-        <table id="QB_TABLE" style="display: inline-flex;width: 500px;">  </table>            
-        <table id="WR_TABLE" style="display: inline-flex;width: 500px;" > </table>
-        <table id="RB_TABLE" style="display: inline-flex;" > 
-        </table>
+        <table id="QB_TABLE" style="display: inline-flex;width: 33%" class="Main_Table"> </table>            
+        <table id="WR_TABLE" style="display: inline-flex;width: 33%;" class="Main_Table"> </table>
+        <table id="RB_TABLE" style="display: inline-flex;width: 33%" class="Main_Table"> </table>
     </body>
     <script >
 
@@ -191,7 +208,14 @@
                 //console.log(pp);
                 player_list.push(pp);
 
-                let str = "<tr> <th> " + split_str[0] + " </th> <th> " + split_str[1] + "</th> <th> " + split_str[2] + " </th> </tr>";
+                let str = "";
+                if(i == 0){
+                    str = "<tr> <th style=\"font-weight:bold;font-size:16px;\"> " + split_str[0] + " </th> <th style=\"font-weight:bold;font-size:16px;\"> " + split_str[1] + "</th> <th style=\"font-weight:bold;font-size:16px;\"> " + split_str[2] + " </th> </tr>";
+                }
+                else{
+                    str = "<tr> <td> " + split_str[0] + " </td> <td> " + split_str[1] + "</td> <td> " + split_str[2] + " </td> </tr>";
+                }
+            
                 table_1 += str;
             }
             //table_1 += "</table>";
