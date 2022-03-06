@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+    <head>
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/BROWSER_ICON.png">
+        <title> Sharp OddƵ - Sport Score Predictions</title>
+    </head>
     <body>
 
         <style>
+
             /* Add a black background color to the top navigation */
             .topnav {
                 background-color: black;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .bottom_nav_bar{
+                background-color: lightgray;
                 overflow: hidden;
                 margin-left: auto;
                 margin-right: auto;
@@ -19,6 +30,18 @@
                 text-decoration: none;
                 font-size: 34px;
             }
+            .bottom_nav_bar a{
+                float: right;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .inv_text{
+                color: lightgray;
+            }
+
 
             /* Change the color of links on hover */
             .topnav a:hover {
@@ -48,27 +71,66 @@
 
             .flex-child {
                 flex: 1;
-                border: 2px solid black;
             }  
 
             .flex-child:first-child {
                 margin-right: 20px;
             }   
 
+            .vertical_line{
+                border-left: 4px solid black;
+                height: 1000px;
+            }
+            th{
+                border-collapse: collapse;
+                font-size: 20px;
+                font-weight: bold;
+                background: lightblue;
+            }
+            td{
+                border-collapse: collapse;
+                font-size: 18px;
+                font-weight: normal;
+                text-align: center;
+            }
+            .Main_Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+
         </style>
         
         <div class="topnav">
             <a class="logo" href="index.html" style="background-color:white;font-size: 32px;color: black">Sharp Odd<b>Ƶ</b> </a>
-            <a href="nhl.html">NHL</a>
+            <a href="nba.html">NBA</a>
             <a href="cbb.html">CBB</a>
             <a href="NFL.html">NFL</a>
             <a href="cfb_predictions.html">CFB</a>
             <a href="swimming.html">Swimming</a>
             <a href="contact.html"> Contact </a>
         </div>
+
         <br>
         <br>
-        <p style="text-align: center;"> Logo Here</p>
+        
+        <h1 style="margin-left: auto;margin-right: auto;text-align: center;font-size: 48px;"> March Madness Starts March 13!</h1>
+        <div style="margin-left: auto;margin-right: auto;"> 
+            <p style="text-align: center;"> <a href="nba.html"> Check out latest NBA Game Predictions</a> </p>
+            <p style="text-align: center;"> <a href="nba.html"> Check out latest College Football Game Predictions</a> </p>
+            <p style="text-align: center;"> <a href="nba.html"> Check out latest College Basketball Game Predictions</a> </p>
+            <p style="text-align: center;"> <a href="nba.html"> Check out latest NBA Game Predictions</a> </p>
+        </div>
+
+        <div style="margin-left: auto;margin-right: auto;">
+            <marquee direction = "left" height = "50" width = "100%" color: red style="font-size: 22px;"> <b> Latest News: </b> March Madness Starts March 13th! </marquee>
+        </div>
+
         <br>
         <br>
 
@@ -76,16 +138,104 @@
 
             <div class="flex-child magenta;">
               <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming CBB Games </p>
-              <p> Only put ~4 games here, encourage them to explore the page </p>
+              <table class="Main_Table">
+                    <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+     
+             </table>
             </div>
+            <div class="vertical_line"> </div>
             
             <div class="flex-child green">
-                <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming NHL Games </p>
+                <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming NBA Games </p>
+                <table class="Main_Table">
+                    <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
+                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
+     
+             </table>
             </div>
             
           </div>
 
-
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <div class="bottom_nav_bar">
+                <a href="contact.html"> <u> Contact </u></a>
+                <p class="inv_text"> a </p>
+                <a href="index.html"> Twitter </a> <a href="index.html"> Instagram </a> <p style="float: right;"> <b> Social Media: </b> </p>
+                <p class="inv_text"> a </p>
+                <p class="inv_text"> a </p>
+            </div>
 
 
     </body>
