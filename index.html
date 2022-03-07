@@ -79,29 +79,50 @@
 
             .vertical_line{
                 border-left: 4px solid black;
-                height: 1000px;
+                height: 750px;
             }
-            th{
+            .Alt_Table{
                 border-collapse: collapse;
-                font-size: 20px;
-                font-weight: bold;
-                background: lightblue;
-            }
-            td{
-                border-collapse: collapse;
-                font-size: 18px;
-                font-weight: normal;
-                text-align: center;
-            }
-            .Main_Table{
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
                 width: 80%;
                 margin-left: auto;
                 margin-right: auto;
-                border: 1px;
+            }
+            .Alt_Table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+            .Alt_Table th,
+            .Alt_Table td {
+                padding: 12px 15px;
+                text-align: center;
+            }
+            .Alt_Table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            .Alt_Table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .Alt_Table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
             }
             .blank_row{
                 background-color: #FFFFFF;
                 color: white;
+            }
+
+            .No_UnderLine{
+                text-decoration: none;
+            }
+            .BTN_MORE :hover{
+                background-color: lightgray;
             }
 
         </style>
@@ -119,13 +140,7 @@
         <br>
         <br>
         
-        <h1 style="margin-left: auto;margin-right: auto;text-align: center;font-size: 48px;"> March Madness Starts March 13!</h1>
-        <div style="margin-left: auto;margin-right: auto;"> 
-            <p style="text-align: center;"> <a href="nba.html"> Check out latest NBA Game Predictions</a> </p>
-            <p style="text-align: center;"> <a href="nba.html"> Check out latest College Football Game Predictions</a> </p>
-            <p style="text-align: center;"> <a href="nba.html"> Check out latest College Basketball Game Predictions</a> </p>
-            <p style="text-align: center;"> <a href="nba.html"> Check out latest NBA Game Predictions</a> </p>
-        </div>
+        <h1 style="margin-left: auto;margin-right: auto;text-align: center;font-size: 48px;">  <a href="cbb_march_madness.html"> <u> March Madness Starts March 13! </u> </a></h1>
 
         <div style="margin-left: auto;margin-right: auto;">
             <marquee direction = "left" height = "50" width = "100%" color: red style="font-size: 22px;"> <b> Latest News: </b> March Madness Starts March 13th! </marquee>
@@ -137,93 +152,148 @@
         <div class="flex-container">
 
             <div class="flex-child magenta;">
-              <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming CBB Games </p>
-              <table class="Main_Table">
-                    <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-     
+
+              <table class="Alt_Table">
+                <caption style="font-size: 24px;"> <b> Upcoming College Basketball Games </b> </caption>
+                <thead>
+                    <tr> 
+                        <th> Teams </th>
+                        <th> Computer G.B Projection</th>
+                        <th> Computer R.F Projection</th>
+                        <th> Computer PCA Projection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <b> Duke </b> </td>
+                        <td> 78.6 </td>
+                        <td> 75.9 </td>
+                        <td> 83 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Pittsburgh </b> </td>
+                        <td> 64.3 </td>
+                        <td> 64.2 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Purdue </b> </td>
+                        <td> 72.5 </td>
+                        <td> 73.5 </td>
+                        <td> 79 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Wisconsin </b> </td>
+                        <td> 72.1 </td>
+                        <td> 72.4 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Arizona </b> </td>
+                        <td> 72.1 </td>
+                        <td> 70.7 </td>
+                        <td> 73 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> USC </b> </td>
+                        <td> 68.9 </td>
+                        <td> 68.2 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Kansas </b> </td>
+                        <td> 76.0 </td>
+                        <td> 74.7 </td>
+                        <td> 74.0 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> TCU </b> </td>
+                        <td> 70.4 </td>
+                        <td> 71.1 </td>
+                        <td> 73 </td>
+                    </tr>
+                </tbody>
+
              </table>
+
+            <p style="text-align: center;"> <a href="cbb.html" style="color: black;font-size: 22px;"> See More College Basketball Predictions </a> </p>
+
             </div>
             <div class="vertical_line"> </div>
             
             <div class="flex-child green">
-                <p style="font-size: 18px;font-weight: bold;text-align: center;"> Upcoming NBA Games </p>
-                <table class="Main_Table">
-                    <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-                    <tr> <td> <b>Team 1</b>  </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-                    <tr> <td> <b>Team 1</b> </td> <td> Score 1 </td> <td> Score 2 </td> <td> Score 3 </td></tr>
-     
+                <table class="Alt_Table">
+                <caption style="font-size: 24px;"> <b> Upcoming NBA Games </b> </caption>
+                <thead>
+                    <tr> 
+                        <th> Teams </th>
+                        <th> Computer G.B Projection</th>
+                        <th> Computer R.F Projection</th>
+                        <th> Computer PCA Projection</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <b> Duke </b> </td>
+                        <td> 78.6 </td>
+                        <td> 75.9 </td>
+                        <td> 83 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Pittsburgh </b> </td>
+                        <td> 64.3 </td>
+                        <td> 64.2 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Purdue </b> </td>
+                        <td> 72.5 </td>
+                        <td> 73.5 </td>
+                        <td> 79 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> Wisconsin </b> </td>
+                        <td> 72.1 </td>
+                        <td> 72.4 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Arizona </b> </td>
+                        <td> 72.1 </td>
+                        <td> 70.7 </td>
+                        <td> 73 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> USC </b> </td>
+                        <td> 68.9 </td>
+                        <td> 68.2 </td>
+                        <td> 64 </td>
+                    </tr>
+                    <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                    <tr>
+                        <td> <b> Kansas </b> </td>
+                        <td> 76.0 </td>
+                        <td> 74.7 </td>
+                        <td> 74.0 </td>
+                    </tr>
+                    <tr>
+                        <td> <b> TCU </b> </td>
+                        <td> 70.4 </td>
+                        <td> 71.1 </td>
+                        <td> 73 </td>
+                    </tr>
+                </tbody>
              </table>
+             <p style="text-align: center;"> <a href="cbb.html" style="color: black;font-size: 22px;"> See More College Basketball Predictions </a> </p>
             </div>
             
           </div>
 
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
           <br>
           <br>
           <br>
