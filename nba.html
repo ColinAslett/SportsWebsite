@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+    <body>
+        <style>
+            /* MENU BAR */
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: black;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .subnav{
+                background-color: darkgrey;
+                overflow: hidden;               
+            }
+            .bottom_nav_bar{
+                background-color: lightgray;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 34px;
+            }
+            .subnav a{
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;               
+            }
+            .bottom_nav_bar a{
+                float: right;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .inv_text{
+                color: lightgray;
+            }
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: darkgray;
+                color: black;
+            }
+            .subnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: gray;
+                color: white;
+            }
+            .subnav a.active {
+                background-color: gray;
+                color: white;
+            }
+
+            /* Other CSS Styling */
+
+            a{
+                color:white;
+                text-decoration: none; 
+                background-color: none;
+            }
+
+            /* BOX CSS */
+
+            .box{
+                border: 5px solid black;
+                border-radius: 5px;
+                border-top-right-radius: 10% 30%;
+                background-color: lightgray;
+            }
+
+            h1{
+                text-align: center;
+            }
+            /*
+            th{
+                border-collapse: collapse;
+                font-size: 20px;
+                font-weight: bold;
+                background: lightblue;
+            }
+            td{
+                border-collapse: collapse;
+                font-size: 18px;
+                font-weight: normal;
+                text-align: center;
+            }
+
+            .Main_Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+            */
+
+            .Alt_Table{
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .Alt_Table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+            .Alt_Table th,
+            .Alt_Table td {
+                padding: 12px 15px;
+                text-align: center;
+            }
+            .Alt_Table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            .Alt_Table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .Alt_Table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+            .blank_row{
+                background-color: #FFFFFF;
+                color: white;
+            }
+
+        </style>
+
+        <div class="topnav">
+            <a class="logo" href="index.html" style="background-color:white;font-size: 32px;color: black">Sharp Odd<b>Ƶ</b> </a>
+            <a class="active" href="nba.html">NBA</a>
+            <a href="cbb.html">CBB</a>
+            <a href="NFL.html">NFL</a>
+            <a href="cfb_predictions.html">CFB</a>
+            <a href="swimming.html">Swimming</a>
+            <a href="contact.html"> Contact </a>
+        </div>
+        <div class="subnav">
+            <a href="nba.html">Game Predictions</a>
+            <a href="nba_ML.html">Model Design</a>
+        </div>
+
+
+        <h1> NBA Game Predictions </h1>
+
+
+        <div style="width: 35%;margin-left: auto;margin-right: auto;text-align: center;"> 
+            <p style="text-align: center;font-size: 18px;"> Upcoming games will be displayed below with select archived games below them. Upcoming games will be updated by 9PM PST the day prior. </p>
+            <p style="text-align: center;font-size: 18px;"> <b> How To Interpret Predictions </b> </p>
+            <p style="text-align: center;font-size: 18px;"> Three different computer models and their projected scores are shown, this is to give a range of outcomes. All of the models are fine tuned and 
+            are all good models, however, different computer models will interpret each game a little bit different. To read more about how the computer models are designed check out the model design page. </p>
+        </div>
+
+
+        <br>
+
+
+        <table class="Alt_Table">
+            <caption style="font-size: 28px;"> <b> March 1st Games </b> </caption>
+            <thead style="font-size: 20px;">
+                <tr> 
+                    <th> Teams </th>
+                    <th> Computer G.B Projection</th>
+                    <th> Computer R.F Projection</th>
+                    <th> Computer PCA Projection</th>
+                </tr>
+            </thead>
+            <tbody style="font-size: 18px;">
+                <tr>
+                    <td> <b> Duke </b> </td>
+                    <td> 78.6 </td>
+                    <td> 75.9 </td>
+                    <td> 83 </td>
+                </tr>
+                <tr>
+                    <td> <b> Pittsburgh </b> </td>
+                    <td> 64.3 </td>
+                    <td> 64.2 </td>
+                    <td> 64 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Purdue </b> </td>
+                    <td> 72.5 </td>
+                    <td> 73.5 </td>
+                    <td> 79 </td>
+                </tr>
+                <tr>
+                    <td> <b> Wisconsin </b> </td>
+                    <td> 72.1 </td>
+                    <td> 72.4 </td>
+                    <td> 64 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Arizona </b> </td>
+                    <td> 72.1 </td>
+                    <td> 70.7 </td>
+                    <td> 73 </td>
+                </tr>
+                <tr>
+                    <td> <b> USC </b> </td>
+                    <td> 68.9 </td>
+                    <td> 68.2 </td>
+                    <td> 64 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Kansas </b> </td>
+                    <td> 76.0 </td>
+                    <td> 74.7 </td>
+                    <td> 74.0 </td>
+                </tr>
+                <tr>
+                    <td> <b> TCU </b> </td>
+                    <td> 70.4 </td>
+                    <td> 71.1 </td>
+                    <td> 73 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Ole Miss </b> </td>
+                    <td> 71.0 </td>
+                    <td> 69.9 </td>
+                    <td> 68.0 </td>
+                </tr>
+                <tr>
+                    <td> <b> Kentucky </b> </td>
+                    <td> 76.2 </td>
+                    <td> 76.4 </td>
+                    <td> 73 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Nebraska </b> </td>
+                    <td> 71.4 </td>
+                    <td> 72.3 </td>
+                    <td> 65 </td>
+                </tr>
+                <tr>
+                    <td> <b> Ohio State </b> </td>
+                    <td> 74.0 </td>
+                    <td> 71.9 </td>
+                    <td> 76 </td>
+                </tr>
+                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
+                <tr>
+                    <td> <b> Florida </b> </td>
+                    <td> 70.7 </td>
+                    <td> 70.2 </td>
+                    <td> 72 </td>
+                </tr>
+                <tr>
+                    <td> <b> Vanderbilt </b> </td>
+                    <td> 67.3 </td>
+                    <td> 69.8 </td>
+                    <td> 64 </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+          <div class="bottom_nav_bar">
+              <a href="contact.html"> <u> Contact </u></a>
+              <p class="inv_text"> a </p>
+              <a href="index.html"> Twitter </a> <a href="index.html"> Instagram </a> <p style="float: right;"> <b> Social Media: </b> </p>
+              <p class="inv_text"> a </p>
+              <p class="inv_text"> a </p>
+          </div>
+
+
+
+    </body>
+    <script>
+        //https://www.sitepoint.com/get-url-parameters-with-javascript/
+ </script>
+</html>
