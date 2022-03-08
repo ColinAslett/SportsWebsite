@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <body>
+
         <style>
             /* MENU BAR */
             /* Add a black background color to the top navigation */
@@ -67,223 +68,50 @@
                 color: white;
             }
 
-            /* Other CSS Styling */
+                        
 
-            a{
-                color:white;
-                text-decoration: none; 
-                background-color: none;
-            }
-
-            .Alt_Table{
-                border-collapse: collapse;
-                margin: 25px 0;
-                font-size: 0.9em;
-                font-family: sans-serif;
-                min-width: 400px;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .Alt_Table thead tr {
-                background-color: #009879;
-                color: #ffffff;
-                text-align: left;
-            }
-            .Alt_Table th,
-            .Alt_Table td {
-                padding: 12px 15px;
-                text-align: center;
-            }
-            .Alt_Table tbody tr {
-                border-bottom: 1px solid #dddddd;
-            }
-
-            .Alt_Table tbody tr:nth-of-type(even) {
-                background-color: #f3f3f3;
-            }
-
-            .Alt_Table tbody tr:last-of-type {
-                border-bottom: 2px solid #009879;
-            }
-            .blank_row{
-                background-color: #FFFFFF;
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: gray;
                 color: white;
             }
+
+
         </style>
-    
         <div class="topnav">
             <a class="logo" href="index.html" style="background-color:white;font-size: 32px;color: black">Sharp Odd<b>Ƶ</b> </a>
             <a href="nba.html">NBA</a>
             <a href="cbb.html">CBB</a>
             <a href="NFL.html">NFL</a>
-            <a class="active" href="cfb_predictions.html">CFB</a>
+            <a href="cfb_predictions.html">CFB</a>
             <a href="swimming.html">Swimming</a>
-            <a href="contact.html"> Contact </a>
-        </div>
-        <div class="subnav">
-            <a href="cfb_predictions.html">Game Predictions</a>
-            <a href="cfb_rankings.html?year=2021">Rankings</a>
-            <a href="player_rating.html?year=2021">Player Ratings</a>
-            <a href="cfb_ML.html"> Model Design </a>
+            <a class="active" href="contact.html"> Contact </a>
         </div>
 
-
-
-        <h1 style="text-align: center;"> CFB Game Predictions </h1>
-
-        <div style="width: 35%;margin-left: auto;margin-right: auto;text-align: center;"> 
-            <p style="text-align: center;font-size: 18px;"> Upcoming games will be displayed below with select archived games below them. Upcoming games will be updated by 9PM PST the day prior. </p>
-            <p style="text-align: center;font-size: 18px;"> <b> How To Interpret Predictions </b> </p>
-            <p style="text-align: center;font-size: 18px;"> Three different computer models and their projected scores are shown, this is to give a range of outcomes. All of the models are fine tuned and 
-            are all good models, however, different computer models will interpret each game a little bit different. To read more about how the computer models are designed check out the model design page. </p>
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;font-size: 24px;">
+            <h1> About </h1>
+            <p> Sharp Odd<b>Ƶ</b> was created in early 2022 after about 1.5 years of extensive work. A passion for sports analytics led to the development 
+                of machine learning models that attempt to predict the score of future games in multiple sports. 
+            </p>
+            <br>
+            <br>
+            <p> <b> Contact Email: </b> ... </p>
+            <br>
+            <br>
+            <p> <b> Buisness Inquries</b> </p>
+            <p> something something, talk about if a company is interested in a partnership or sponsorship how to contact </p>
+            <br>
+            <br>
+            <p> <b> Corrections/Problems with Website </b> </p>
+            <p> Notice any issues with the website, whether that be a simple typo or a page malfuctioning please let us know by sending an email to: ... 
+                Please include what page and what time you noticed the issue.
+            </p>
         </div>
-
-
-        <br>
-
-        <table class="Alt_Table">
-            <caption style="font-size: 28px;"> <b> PlayOff Games </b> </caption>
-            <thead style="font-size: 20px;">
-                <tr> 
-                    <th> Teams </th>
-                    <th> Computer G.B Projection</th>
-                    <th> Computer R.F Projection</th>
-                    <th> Computer PCA Projection</th>
-                </tr>
-            </thead>
-            <tbody style="font-size: 18px;">
-                <tr>
-                    <td> <b> Georgia </b> </td>
-                    <td> 31 </td>
-                    <td> 29 </td>
-                    <td> 31 </td>
-                </tr>
-                <tr>
-                    <td> <b> Michigan </b> </td>
-                    <td> 20 </td>
-                    <td> 21 </td>
-                    <td> 14 </td>
-                </tr>
-                <tr class="blank_row"> <td> a</td> <td> a</td> <td> a</td> <td>a</td> </tr>
-                <tr>
-                    <td> <b> Alabama </b> </td>
-                    <td> 32 </td>
-                    <td> 31 </td>
-                    <td> 31 </td>
-                </tr>
-                <tr>
-                    <td> <b> Cincinnati </b> </td>
-                    <td> 31 </td>
-                    <td> 30 </td>
-                    <td> 21 </td>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <br>
-        
-
-        <h2 style="text-align: center;"> Conference Championship Games </h2>
-        <!-- justify-content: space-between; Maybe-->
-        <table class="Alt_Table">
-           <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
-           <tr> <td> <b> Western Kentucky </b> </td> <td> 36 </td> <td> 31 </td> <td> 34 </td></tr>
-           <tr> <td> <b> UTSA </b> </td> <td> 34 </td> <td> 31 </td> <td> 31 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Oregon </b> </td> <td> 29 </td> <td> 24 </td> <td> 30.5 </td></tr>
-           <tr> <td> <b> Utah </b> </td> <td> 31 </td> <td> 31 </td> <td> 34.5 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Baylor </b> </td> <td> 22 </td> <td> 14 </td> <td> 25 </td></tr>
-           <tr> <td> <b> Oklahoma State </b> </td> <td> 29 </td> <td> 31 </td> <td> 30 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Utah State </b> </td> <td> 21 </td> <td> 23 </td> <td> 10 </td></tr>
-           <tr> <td> <b> San Diego State </b> </td> <td> 25 </td> <td> 25 </td> <td> 24 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Appalachian State </b> </td> <td> 36 </td> <td> 31 </td> <td> 34 </td></tr>
-           <tr> <td> <b> Louisiana </b> </td> <td> 29 </td> <td> 14 </td> <td> 26 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Georiga </b> </td> <td> 31 </td> <td> 32 </td> <td> 31 </td></tr>
-           <tr> <td> <b> Alabama </b> </td> <td> 26 </td> <td> 19 </td> <td> 17 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Houston </b> </td> <td> 26 </td> <td> 24 </td> <td> 25 </td></tr>
-           <tr> <td> <b> Cincinnati </b> </td> <td> 24 </td> <td> 14 </td> <td> 25 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Michigan </b> </td> <td> 24.5 </td> <td> 24 </td> <td> 26 </td></tr>
-           <tr> <td> <b> Iowa </b> </td> <td> 17.5 </td> <td> 14 </td> <td> 17 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Pittsburgh </b> </td> <td> 42 </td> <td> 31 </td> <td> 47 </td></tr>
-           <tr> <td> <b> Wake Forest </b> </td> <td> 35 </td> <td> 31 </td> <td> 33 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> USC </b> </td> <td> 25 </td> <td> 31 </td> <td> 30 </td></tr>
-           <tr> <td> <b> California </b> </td> <td> 29 </td> <td> 31 </td> <td> 32 </td></tr>
-        </table>
-        <br> 
-        <h2 style="text-align: center;"> November 27 Games </h2>
-        <!-- justify-content: space-between; Maybe-->
-        <table class="Main_Table">
-           <tr> <th> Teams </th> <th> G.B Prediction </th> <th> PCA Prediction </th> <th> SVM Prediction </th></tr>
-           <tr> <td> <b> Ohio State </b> </td> <td> 37 </td> <td> 31 </td> <td> 38 </td></tr>
-           <tr> <td> <b> Michigan </b> </td> <td> 28 </td> <td> 24 </td> <td> 28 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Nebraska </b> </td> <td> 24 </td> <td> 14 </td> <td> 23.5 </td></tr>
-           <tr> <td> <b> Iowa </b> </td> <td> 18 </td> <td> 14 </td> <td> 16.5 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Oklahoma State </b> </td> <td> 29 </td> <td> 31 </td> <td> 31 </td></tr>
-           <tr> <td> <b> Oklahoma </b> </td> <td> 26 </td> <td> 24 </td> <td> 24 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Oregon </b> </td> <td> 30 </td> <td> 31 </td> <td> 31 </td></tr>
-           <tr> <td> <b> Oregon State </b> </td> <td> 31 </td> <td> 24 </td> <td> 27 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Florida </b> </td> <td> 37 </td> <td> 31 </td> <td> 32 </td></tr>
-           <tr> <td> <b> Florida State </b> </td> <td> 31 </td> <td> 31 </td> <td> 32 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> East Carolina </b> </td> <td> 24 </td> <td> 31 </td> <td> 34 </td></tr>
-           <tr> <td> <b> Cincinnati </b> </td> <td> 34 </td> <td> 24 </td> <td> 23 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Mississippi State </b> </td> <td> 32 </td> <td> 31 </td> <td> 36 </td></tr>
-           <tr> <td> <b> Ole Miss </b> </td> <td> 35 </td> <td> 38 </td> <td> 33 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Texas </b> </td> <td> 28 </td> <td> 31 </td> <td> 26 </td></tr>
-           <tr> <td> <b> Kansas State </b> </td> <td> 37 </td> <td> 31 </td> <td> 37 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Washington </b> </td> <td> 26 </td> <td> 17 </td> <td> 23 </td></tr>
-           <tr> <td> <b> Washington State </b> </td> <td> 15 </td> <td> 17 </td> <td> 29 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Baylor </b> </td> <td> 35 </td> <td> 24 </td> <td> 35 </td></tr>
-           <tr> <td> <b> Texas Tech </b> </td> <td> 27 </td> <td> 31 </td> <td> 32 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Georgia </b> </td> <td> 34 </td> <td> 31 </td> <td> 39 </td></tr>
-           <tr> <td> <b> Georgia Tech </b> </td> <td> 19 </td> <td> 14 </td> <td> 17 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Boston College </b> </td> <td> 36 </td> <td> 31 </td> <td> 35 </td></tr>
-           <tr> <td> <b> Wake Forest </b> </td> <td> 34 </td> <td> 31 </td> <td> 33 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Notre Dame </b> </td> <td> 37 </td> <td> 31 </td> <td> 39 </td></tr>
-           <tr> <td> <b> Stanford </b> </td> <td> 21 </td> <td> 21 </td> <td> 21 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> BYU </b> </td> <td> 39 </td> <td> 31 </td> <td> 40 </td></tr>
-           <tr> <td> <b> USC </b> </td> <td> 31 </td> <td> 31 </td> <td> 31 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Texas A&M </b> </td> <td> 30 </td> <td> 31 </td> <td> 28 </td></tr>
-           <tr> <td> <b> LSU </b> </td> <td> 22 </td> <td> 17 </td> <td> 23 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Minnesota </b> </td> <td> 24 </td> <td> 14 </td> <td> 21 </td></tr>
-           <tr> <td> <b> Wisconsin </b> </td> <td> 23 </td> <td> 14 </td> <td> 25 </td></tr>
-           <tr class="blank_row"> <td> a</td> <td> </td> <td> </td> <td> </td> </tr>
-           <tr> <td> <b> Michigan State </b> </td> <td> 25 </td> <td> 31 </td> <td> 25 </td></tr>
-           <tr> <td> <b> Penn State </b> </td> <td> 26 </td> <td> 20 </td> <td> 26 </td></tr>
-        </table>
-
-        <br>
-        <br>
-
-
 
     </body>
     <script>
-        //https://www.sitepoint.com/get-url-parameters-with-javascript/
- </script>
+
+        //Code to change the href of a page 
+        //document.getElementById("DYNAMIC_LINK").href = "second.html?player=PLAYERNAME";
+    </script>
 </html>
