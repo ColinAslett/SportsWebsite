@@ -1,18 +1,24 @@
 <!DOCTYPE html>
     <body>
         <style>
-            /* MENU BAR */
+             /* MENU BAR */
             /* Add a black background color to the top navigation */
             .topnav {
-                background-color: #333;
+                background-color: black;
                 overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
             }
-
             .subnav{
                 background-color: darkgrey;
                 overflow: hidden;               
             }
-
+            .bottom_nav_bar{
+                background-color: lightgray;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
             /* Style the links inside the navigation bar */
             .topnav a {
                 float: left;
@@ -20,9 +26,8 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                font-size: 32px;
+                font-size: 34px;
             }
-
             .subnav a{
                 float: left;
                 color: black;
@@ -31,10 +36,20 @@
                 text-decoration: none;
                 font-size: 17px;               
             }
-
+            .bottom_nav_bar a{
+                float: right;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            .inv_text{
+                color: lightgray;
+            }
             /* Change the color of links on hover */
             .topnav a:hover {
-                background-color: #ddd;
+                background-color: darkgray;
                 color: black;
             }
             .subnav a:hover {
@@ -44,7 +59,7 @@
 
             /* Add a color to the active/current link */
             .topnav a.active {
-                background-color: blue;
+                background-color: gray;
                 color: white;
             }
             .subnav a.active {
@@ -109,29 +124,23 @@
         </style>
 
         <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="nhl.html">NHL</a>
+            <a class="logo" href="index.html" style="background-color:white;font-size: 32px;color: black">Sharp Odd<b>Ƶ</b> </a>
+            <a href="nba.html">NBA</a>
             <a class="active" href="cbb.html">CBB</a>
             <a href="NFL.html">NFL</a>
             <a href="cfb_predictions.html">CFB</a>
-            <a href="swimming_main_page.html">Swimming</a>
+            <a href="contact.html"> Contact </a>
         </div>
         <div class="subnav">
-            <a href="cbb.html">Game Predictions</a>
-            <a href="cbb_march_madness.html">March Madness</a>
-            <a href="cbb_ML.html">Model Design</a>
+            <a href="cbb.html"> <b>Game Predictions </b></a>
+            <a href="cbb_march_madness.html"> <b> March Madness </b></a>
+            <a href="cbb_ML.html"> <b> Model Design </b> </a>
         </div>
 
 
-        <h1> College Basketball Machine Learnign Model Design </h1>
+        <h1> College Basketball Machine Learning Model Design </h1>
 
-        <div style="width: 50%;margin-left: auto;margin-right: auto;">
-            <p id="test" style="text-align: center;"> This section will describe how the machine learning models were built, including what variables they use. </p>
-        </div>
 
-        <hr style="height: 6px;background-color: black;">
-
-        <h2 style="text-align: center; font-size: 24px;font-weight: bold;"> Machine Learning Models</h2>
         <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
             <p id="test" style="text-align: center;"> Three different machine learning models were chosen to predict scores: </p>
             <li>
@@ -179,6 +188,15 @@
                 <tr>
                     <td> Average Shot Attempts per Game </td>
                 </tr>
+                <tr>
+                    <td> Opponent Average Turnovers </td>
+                </tr>
+                <tr>
+                    <td> Opponent Average Blocks </td>
+                </tr>
+                <tr>
+                    <td> Opponent Average Steals </td>
+                </tr>
             </table>
             <br>
             <p> After the models are given the data with the above variables, they decide what variables are most important. For the random forest model, a variable importance plot is given below in <b> Figure 1 </b> showing 
@@ -189,9 +207,10 @@
             
             <p> <b> Figure 1)</b> Random Forest Variable Importance Plot </p>
             <br>
-            <p> Another type of plot that shows how important a variable is to the models is the "Minimal Depth and Minimum Chart" as shown in <b> Figure 2 </b>. The chart describes how close a variable is to the root of the trees, with variables that are closer to the root of the tree 
+            <p> Another type of plot that shows how important a variable is to the models is the "Minimal DepthChart" as shown in <b> Figure 2 </b>. The chart describes how close a variable is to the root of the trees, with variables that are closer to the root of the tree 
             being more important to the model. The numbers represent variables that are x splits away from the root, on average. The color range for each variable describes the distribution of how close the variable is to the root of the tree. </p>
             <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/CBB_Min_Depth.png"> 
+            <p> <b> Figure 2) </b> Random Forest Minimal Depth chart</p>
             <br>
             <p> The plots below depict the marginal effect of each variable while "integrating" out the other variables. In other words, this describes what the model would think the score would be if the given variable was a certain value while holding
                 all other variables at a constant value(Average of the dataset). These plots help show the relationship between the variable and the score, for example, the higher the 2_pt_pct for the team is the higher their predicted score will be in their next game.
@@ -214,6 +233,11 @@
         <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_shots.png" style="display: inline-flex;width: 33%;"> 
         <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_steals.png" style="display: inline-flex;width: 33%;"> 
         <img src="https://raw.githubusercontent.com/ColinAslett/SportsWebsite/main/ML_Pic/GB_turnovers.png" style="display: inline-flex;width: 33%;">
+        <br>
+        <div style="width: 50%;margin-left: auto;margin-right: auto;text-align: center;">
+            <p> <b> Figure 3) </b> Gradient Boost Marginal Effect Plots</p>
+        </div>
+        <br>
         <br>
     </body>
 </html>
