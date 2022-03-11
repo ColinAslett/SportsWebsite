@@ -1,0 +1,503 @@
+Name,School,Score
+James Washington,Oklahoma State,3.310339954
+Anthony Miller,Memphis,3.047079943
+Anthony Johnson,Buffalo,2.79428672
+Tre'Quan Smith,UCF,2.573438059
+Diontae Johnson,Toledo,2.528362678
+Cedric Wilson,Boise State,2.483978549
+David Sills,West Virginia,2.394745611
+Keke Coutee,Texas Tech,2.320807214
+A.J. Brown,Ole Miss,2.258051436
+Jordan Lasley,UCLA,2.256371913
+Marcell Ateman,Oklahoma State,2.097201938
+Courtland Sutton,SMU,2.003511478
+James Gardner,Miami (OH),1.95258696
+Michael Gallup,Colorado State,1.914651399
+Ka'Raun White,West Virginia,1.913333091
+Korey Robertson,Southern Mississippi,1.9051298
+J'Mon Moore,Missouri,1.883864012
+Marquise Brown,Oklahoma,1.868936963
+Emanuel Hall,Missouri,1.822670773
+Denzel Mims,Baylor,1.820635923
+Trey Quinn,SMU,1.794075163
+Trevon Brown,East Carolina,1.700630015
+Andy Isabella,Massachusetts,1.693027214
+Stanley Morgan Jr.,Nebraska,1.67798876
+Steve Ishmael,Syracuse,1.655446934
+Penny Hart,Georgia State,1.62967701
+Jaleel Scott,New Mexico State,1.557857448
+N'Keal Harry,Arizona State,1.541734064
+Deontay Burnett,USC,1.487001598
+Jaylen Smith,Louisville,1.412424686
+Byron Pringle,Kansas State,1.410341326
+Sergio Bailey,Eastern Michigan,1.408693923
+Wyatt Demps,Nevada,1.401081226
+Mark Andrews,Oklahoma,1.385507642
+DaeSean Hamilton,Penn State,1.364045452
+James Proche,SMU,1.350042645
+Tyre Brady,Marshall,1.334715005
+Allen Lazard,Iowa State,1.333989582
+Kwadarrius Smith,Akron,1.319796296
+D.J. Chark,LSU,1.317320033
+Damion Ratley,Texas A&amp;M,1.279119753
+Christian Kirk,Texas A&amp;M,1.268524437
+D.J. Moore,Maryland,1.264109213
+KeeSean Johnson,Fresno State,1.256817201
+Malcolm Williams,Coastal Carolina,1.246128389
+JJ Arcega-Whiteside,Stanford,1.236131343
+CeeDee Lamb,Oklahoma,1.202520623
+Jalen Guyton,North Texas,1.188494994
+Andre Levrone,Virginia,1.168200653
+Marquez Valdes-Scantling,South Florida,1.164457643
+Aaron Cephus,Rice,1.131177516
+Cam Phillips,Virginia Tech,1.127147233
+Calvin Ridley,Alabama,1.117575029
+Darren Carrington,Utah,1.102837119
+Kalib Woods,Florida Atlantic,1.094238211
+Adonis Jennings,Temple,1.088215876
+Tyler Johnson,Minnesota,1.080080933
+Tyree McCants,South Florida,1.078612957
+Kelvin Harmon,North Carolina State,1.053452586
+Felton Davis III,Michigan State,1.046223279
+Thomas Owens,Florida International,1.041540341
+Anthony Mahoungou,Purdue,1.04094594
+Davon Grayson,East Carolina,1.038256854
+Teddy Veal,Louisiana Tech,1.031118535
+Dez Fitzpatrick,Louisville,1.027905811
+Darren Andrews,UCLA,1.025535914
+Alfonso Onunwor,Idaho,1.02149777
+Darius Slayton,Auburn,1.015086867
+Steven Dunbar,Houston,0.9854716984
+Johnathon Johnson,Missouri,0.9603774766
+DaMarkus Lodge,Ole Miss,0.9541168399
+Hakeem Butler,Iowa State,0.9503261014
+RJ Turner,Louisiana-Monroe,0.9422012894
+Corey Willis,Central Michigan,0.9204637762
+Javon Wims,Georgia,0.9161285528
+Tavares Martin Jr.,Washington State,0.9129992164
+Greg Dortch,Wake Forest,0.9109986919
+Mark Chapman,Central Michigan,0.9091829171
+Ike Lewis,Appalachian State,0.8998761863
+Dredrick Snelson,UCF,0.8925268247
+Noah Fant,Iowa,0.8893752012
+Chris Murray,Arkansas State,0.8851552037
+Steven Sims Jr.,Kansas,0.883932952
+Terren Encalade,Tulane,0.8695166995
+Ricky Jeune,Georgia Tech,0.8515902476
+Marcus Simms,West Virginia,0.8396802468
+Kalija Lipscomb,Vanderbilt,0.8364406597
+Jalen Reagor,Texas Christian,0.8352505051
+D.K. Metcalf,Ole Miss,0.8181910802
+Simmie Cobbs,Indiana,0.8166525791
+Marcus Green,Louisiana-Monroe,0.8159247995
+Justin McInnis,Arkansas State,0.8123558996
+Johnnie Dixon,Ohio State,0.8023139641
+Anthony Ratliff-Williams,North Carolina,0.7964359214
+Ty Lee,Middle Tennessee State,0.7773526138
+Keith Kirkwood,Temple,0.7374394898
+Tyler Vaughns,USC,0.7349570386
+Vic Wharton,California,0.7297851176
+Terry Godwin,Georgia,0.7285741953
+McLane Mannix,Nevada,0.725933658
+Braxton Berrios,Miami (FL),0.7254452272
+Rico Bussey Jr.,North Texas,0.7070082228
+Auden Tate,Florida State,0.7059294239
+Jon'Vea Johnson,Toledo,0.7009127702
+Dylan Cantrell,Texas Tech,0.6794212057
+Turner Smiley,North Texas,0.6737588857
+Jester Weah,Pitt,0.6733325773
+T.J. Vasher,Texas Tech,0.6681062211
+Justin Hobbs,Tulsa,0.6653750372
+Teo Redding,Bowling Green State,0.6628650238
+C.J. Johnson,Wyoming,0.6617747131
+Dante Pettis,Washington,0.6464642348
+Jamarius Way,South Alabama,0.6371823836
+Deon Yelder,Western Kentucky,0.6269013323
+Trent Sherfield,Vanderbilt,0.6256411027
+Kyle Williams,Arizona State,0.5998143088
+Albert Okwuegbunam,Missouri,0.5963770564
+Kanawai Noa,California,0.5919196034
+Tabari Hines,Wake Forest,0.587942923
+Hergy Mayala,Connecticut,0.5846196938
+Chris Jones,Coastal Carolina,0.5763094286
+JD Spielman,Nebraska,0.5711311438
+Linell Bonner,Houston,0.569359808
+Michael Lawrence,North Texas,0.5664670292
+Jamire Jordan,Fresno State,0.5591644826
+Deon Cain,Clemson,0.559005394
+Gary Jennings,West Virginia,0.5490123129
+Chris Platt,Baylor,0.5445951591
+Bryan Edwards,South Carolina,0.5390935917
+Cam Serigne,Wake Forest,0.5387672032
+Will Hastings,Auburn,0.5234973343
+Olamide Zaccheaus,Virginia,0.5172523239
+Darnell Mooney,Tulane,0.5154926395
+Scotty Washington,Wake Forest,0.5044505004
+Tony Ellison,Arizona,0.5018789021
+Ryheem Malone,Louisiana,0.4965111382
+Cody Thompson,Toledo,0.4864892866
+Papi White,Ohio,0.4812764064
+John Ursua,Hawaii,0.4784333808
+Devonte Boyd,UNLV,0.4762854729
+Blake Mack,Arkansas State,0.4725634507
+Steven Mitchell,USC,0.4620593969
+Elijah King,Texas State,0.459197808
+Andre Wilson,UAB,0.4495593986
+Ben Skowronek,Northwestern,0.445523865
+Quintez Cephus,Wisconsin,0.4349276346
+Nyqwan Murray,Florida State,0.4324120239
+Seth Dawkins,Louisville,0.4243401143
+Thomas Hennigan,Appalachian State,0.4238219508
+Brendan O'Leary-Orange,Nevada,0.421370563
+Isaiah Wright,Temple,0.4112811899
+Kahlil Lewis,Cincinnati,0.410455092
+Ervin Phillips,Syracuse,0.3972586783
+Datrin Guyton,Bowling Green State,0.3858805454
+Collin Johnson,Texas,0.3677417178
+Demornay Pierson-El,Nebraska,0.3674807043
+Adam Breneman,Massachusetts,0.3501868777
+Jakobi Meyers,North Carolina State,0.345616496
+Willie Wright,Florida Atlantic,0.341861226
+Doni Dowling,Virginia,0.3345220179
+Shun Brown,Arizona,0.3298981604
+Dimitri Flowers,Oklahoma,0.328584448
+Jalen McCleskey,Oklahoma State,0.3274215525
+Dillon Stoner,Oklahoma State,0.3162475368
+Darnell Salomon,South Florida,0.3123560201
+Dalton Schoen,Kansas State,0.309413449
+Mike Gesicki,Penn State,0.3080336774
+Ryan Davis,Auburn,0.3020192757
+Rhashid Bonnette,Louisiana Tech,0.2890040305
+Brian Williams,Louisiana-Monroe,0.2806512521
+John Diarse,Texas Christian,0.2805959309
+Ron'Quavion Tarver,Utah State,0.2776211907
+Jonathan Nance,Arkansas,0.2630286576
+Bryce Bobo,Colorado,0.2533572202
+Lucky Jackson,Western Kentucky,0.2515899189
+Shay Fields,Colorado,0.2440458457
+Damion Willis,Troy,0.2413089262
+T.J. Rahming,Duke,0.2391306063
+Scott Miller,Bowling Green State,0.2324237049
+Jordan Akins,UCF,0.2266639055
+Kaden Smith,Stanford,0.2192647202
+Brandon Presley,UNLV,0.2174544751
+Ryan Yurachek,Marshall,0.2165321735
+Deondre Douglas,Troy,0.2140018502
+Equanimeous St. Brown,Notre Dame,0.1915697982
+A.J. Taylor,Wisconsin,0.1864520399
+Terry McLaurin,Ohio State,0.1844716862
+Tony Pollard,Memphis,0.1819783838
+Tyler Conklin,Central Michigan,0.1801428363
+D'Wayne Eskridge,Western Michigan,0.1627923499
+Raelon Singleton,Utah,0.1612382137
+Parris Campbell,Ohio State,0.1569416442
+Justin Hall,Ball State,0.1482046379
+Marcus Bennett,Air Force,0.1478954161
+Stephen Louis,North Carolina State,0.1478221713
+Jordan Veasy,California,0.1430777153
+Marquez Callaway,Tennessee,0.1356396039
+Kevin Stepherson,Notre Dame,0.1294420095
+Austin Wolf,Akron,0.1247246674
+Detrich Clark,Colorado State,0.1178017625
+Jake Roh,Boise State,0.1118571246
+Danny Davis,Wisconsin,0.1114258774
+Binjimen Victor,Ohio State,0.1044244235
+Ahmmon Richards,Miami (FL),0.1000988545
+Jalen Harvey,Arizona State,0.08459962234
+Omar Bayless,Arkansas State,0.08372039487
+Tommy Sweeney,Boston College,0.08242556712
+Kamathi Holsey,Buffalo,0.07861128322
+Dylan Collie,Hawaii,0.07397372896
+Olabisi Johnson,Colorado State,0.07257144096
+Taivon Jacobs,Maryland,0.06270780587
+Jordan Jones,Arkansas,0.05190232434
+Marchie Murdock,Iowa State,0.05117654971
+Mecole Hardman,Georgia,0.0508652428
+Phil Mayhue,Memphis,0.05075992573
+Juwan Johnson,Penn State,0.04423822141
+Micah Holder,San Diego State,0.04403325343
+Ricky Smalling,Illinois,0.04297701671
+Brendan Cope,Ohio,0.03754536707
+K.J. Osborn,Buffalo,0.03334436559
+Cody White,Michigan State,0.02074136114
+Nacarius Fant,Western Kentucky,0.008093627981
+Christian Booker,Arkansas State,-0.007602357899
+Renard Bell,Washington State,-0.02711837613
+Sam Harris,South Alabama,-0.0274611788
+Louis Dorsey,Illinois,-0.03089806298
+Jacob Breeland,Oregon,-0.03182139192
+Antoine Porter,Eastern Michigan,-0.03467972801
+Keenan Barnes,Louisiana,-0.03702189394
+Troy Fumagalli,Wisconsin,-0.038396069
+Spencer Tears,Northern Illinois,-0.04111802701
+Devin Gray,Cincinnati,-0.04706808533
+Ian Thomas,Indiana,-0.04989295542
+Tyrie Cleveland,Florida,-0.05153734974
+DeAndre Thompkins,Penn State,-0.05178892382
+A.J. Coney,Akron,-0.05399290717
+Dillon Mitchell,Oregon,-0.05946476414
+Theo Howard,UCLA,-0.06914289425
+Josh Stewart,UTSA,-0.08037143789
+Trey Hartley,San Jose State,-0.08743391174
+Jalen Virgil,Appalachian State,-0.09739981721
+A.J. Richardson,Boise State,-0.1014532087
+David Ungerer,Idaho,-0.1136809013
+Ryan Smith,Miami (OH),-0.1304946923
+Aaron McLean,Connecticut,-0.1307607712
+Michael Pittman Jr.,USC,-0.1334289294
+Kerry Thomas,UTSA,-0.1346956937
+Siaosi Wilson,Utah,-0.1360447025
+Harrison Bryant,Florida Atlantic,-0.1362843763
+Jhamon Ausbon,Texas A&amp;M,-0.1367694116
+Alex Bachman,Wake Forest,-0.1421071701
+Hayden Hurst,South Carolina,-0.1491524649
+Gabriel Davis,UCF,-0.1566546436
+C.J. Duncan,Vanderbilt,-0.1631373628
+Isaiah Johnson-Mack,Washington State,-0.1642542918
+Sadiq Palmer,Massachusetts,-0.1644646318
+Christopher Herndon IV,Miami (FL),-0.167516288
+Jared Rice,Fresno State,-0.1700987075
+Jimmy Williams,East Carolina,-0.1741749426
+Dalton Fackrell,Colorado State,-0.1753287118
+Allen Staggers,Southern Mississippi,-0.1769744634
+Jeff Badet,Oklahoma,-0.1804804801
+Tay Martin,Washington State,-0.183738303
+Jessie Britt,Massachusetts,-0.186968197
+Nick Easley,Iowa,-0.2013543039
+Willie Johnson,Marshall,-0.2037887808
+Hunter Renfrow,Clemson,-0.2099916993
+Andrew Meyer,Ohio,-0.2139289443
+Jay Griffin IV,New Mexico,-0.2157454453
+Tyler Batson,UTEP,-0.2183455532
+Brennon Dingle,Massachusetts,-0.2238247039
+Cameron Echols-Luper,Western Kentucky,-0.2297640813
+Rafael Araujo-Lopes,Pitt,-0.2337518543
+Sean Savoy,Virginia Tech,-0.2348434225
+Shi Smith,South Carolina,-0.2473478574
+Marcel Williams,Marshall,-0.2595368566
+John Niupalau,Eastern Michigan,-0.265233929
+Isaiah Zuber,Kansas State,-0.2723589587
+Keishawn Watson,Western Michigan,-0.2740824309
+Izaiah Lottie,New Mexico State,-0.2757902115
+Noah Togiai,Oregon State,-0.2790353887
+Cole Herdman,Purdue,-0.2792226467
+Micah Simon,Brigham Young,-0.2858290255
+Desmon White,Texas Christian,-0.2971629627
+Matt Bushman,Brigham Young,-0.3020530547
+Garrett Johnson,Kentucky,-0.3149965141
+Trent Bostick,Charlotte,-0.3156050116
+Bailey Gaither,San Jose State,-0.3178325534
+JaQuan Blackwell,San Jose State,-0.3233214601
+Devin Ross,Colorado,-0.3237385793
+K.J. Hill,Ohio State,-0.324185466
+Christian Blake,Northern Illinois,-0.3282587968
+Keenen Johnson,Tulsa,-0.3293034031
+Derrick Willies,Texas Tech,-0.3329768173
+OJ Clark,New Mexico State,-0.3364989538
+Jaylen Samuels,North Carolina State,-0.3389862865
+Shane Tucker,Middle Tennessee State,-0.3404476953
+Sam Martin,Miami (OH),-0.3441895358
+Thomas Geddis,Cincinnati,-0.3448842319
+Ryan Izzo,Florida State,-0.3563596046
+Donnie Ernsberger,Western Michigan,-0.3570329357
+Ja'Marcus Bradley,Louisiana,-0.3587514636
+Damonte Coxie,Memphis,-0.3684515803
+Cameron Batson,Texas Tech,-0.3739292897
+Caleb Wilson,UCLA,-0.3746771305
+Jacob Sannon,Idaho,-0.3752522308
+Jay MacIntyre,Colorado,-0.3797915631
+Brandon Johnson,Tennessee,-0.3807274906
+Chad Beebe,Northern Illinois,-0.3842291866
+Chase Claypool,Notre Dame,-0.3859611838
+Macan Wilson,Northwestern,-0.3877375158
+Garrett Dickerson,Northwestern,-0.3883960337
+Deon Stewart,Arkansas,-0.3936061455
+Brycen Hopkins,Purdue,-0.3939401001
+Tyron Johnson,Oklahoma State,-0.3965227582
+Kendrick Edwards,Arkansas State,-0.3967046852
+Austin Conway,Wyoming,-0.4011120928
+Cameron Odom,Ohio,-0.405947649
+Shane Wimann,Northern Illinois,-0.4080600782
+Jackson Anthrop,Purdue,-0.4113652182
+Tevaris McCormick,Troy,-0.4259470709
+Matt Vandeberg,Iowa,-0.4374047568
+Kobay White,Boston College,-0.4452493809
+Collin Lisa,UAB,-0.4512499688
+Anthony Muse,New Mexico State,-0.4652781315
+Aleva Hifo,Brigham Young,-0.4655240452
+Juwann Winfree,Colorado,-0.4662857752
+Luke Timian,Indiana,-0.4678519466
+Quay Johnson,East Carolina,-0.4702872292
+Danzel Mckinley-Lewis,Toledo,-0.4712114935
+Marcus Baugh,Ohio State,-0.4845541113
+Da'Mari Scott,Fresno State,-0.4864771352
+Quez Watkins,Southern Mississippi,-0.4869227328
+Darrell Stewart Jr.,Michigan State,-0.4935502739
+Austin Mack,Ohio State,-0.4953478934
+Mathew Sexton,Eastern Michigan,-0.4990527251
+Flynn Nagel,Northwestern,-0.5008135633
+Melvin Vaughn,Old Dominion,-0.5029600462
+T.J. Hockenson,Iowa,-0.5031787073
+Trenton Irwin,Stanford,-0.5076244956
+Austin Proehl,North Carolina,-0.5085050136
+Kyle Sweet,Washington State,-0.5128793368
+Taysir Mack,Indiana,-0.5177388079
+Timmy Hernandez,Oregon State,-0.5184426604
+Quin Jernighan,Western Kentucky,-0.5185619466
+Jared Murphy,Miami (OH),-0.5195163061
+Tyler Petite,USC,-0.5332479128
+Pooh Stricklin,Baylor,-0.5340430214
+Tyler Hoppes,Nebraska,-0.5374692688
+Travis Fulgham,Old Dominion,-0.5643457735
+Ray-Ray McCloud,Clemson,-0.5722196482
+Johnathan Boone,New Mexico State,-0.5724531864
+Braelon Roberts,Utah State,-0.5732393801
+Tavin Richardson,Kentucky,-0.5743150115
+Charles Nelson,Oregon,-0.5797634919
+Malik Stanley,South Alabama,-0.5834971931
+Hunter Bryant,Washington,-0.5872315113
+Dax Raymond,Utah State,-0.5897522118
+DeAndre McNeal,Florida Atlantic,-0.5924432711
+Brenden Schooler,Oregon,-0.5932802612
+Brandon Powell,Florida,-0.5959588631
+Lil'Jordan Humphrey,Texas,-0.5977948289
+Joey Magnifico,Memphis,-0.6001851432
+CJ Windham,Middle Tennessee State,-0.602199519
+Traveon Samuel,Louisville,-0.6066036611
+Van Jefferson,Ole Miss,-0.6119944808
+Charles Standberry,Louisville,-0.6135135386
+Ky'Jon Tyler,Coastal Carolina,-0.6135473788
+Darrius Scott,Florida International,-0.6150499085
+Isaiah Harper,Old Dominion,-0.6241113359
+Gabe Schrade,Texas State,-0.6342220509
+Tra'Von Chapman,Akron,-0.6376152869
+Jared Pinkney,Vanderbilt,-0.6429171853
+Evan Fairs,Kansas,-0.6474898953
+Kahale Warring,San Diego State,-0.6564834254
+Brady Jones,UTSA,-0.6582545306
+OrTre Smith,South Carolina,-0.660176119
+Will Dissly,Washington,-0.6646379529
+Workpeh Kofa,Charlotte,-0.6694056399
+Trestan Ebner,Baylor,-0.6702441273
+Sean Modster,Boise State,-0.6711205198
+Gregory Phillips,Purdue,-0.6716617336
+Jordan Nathan,Utah State,-0.6801081713
+Trever Ryen,Iowa State,-0.6807827571
+Kamrin Solomon,Florida Atlantic,-0.6808997936
+Pharoah McKever,Florida International,-0.6939224811
+Whop Philyor,Indiana,-0.6954157631
+Chris Taylor,Duke,-0.7004238495
+Ben Johnson,Kansas,-0.7106917667
+Jeremiah Booker,Kansas,-0.7144031225
+Foster Moreau,LSU,-0.7161001998
+Julian Williams,Florida International,-0.7194662963
+Johnny Johnson III,Oregon,-0.7227765116
+Demari Simpkins,Utah,-0.7234112736
+Omar Black,Coastal Carolina,-0.724441629
+Eric Kumah,Virginia Tech,-0.7254707255
+Jordan Thomas,Mississippi State,-0.727333616
+Patrick Smith,Middle Tennessee State,-0.7305823937
+Jordan Villamin,Oregon State,-0.7437376361
+T.J. Watkins,Appalachian State,-0.7453314061
+John Johnson,Troy,-0.7507240786
+Tyrell Johnson,Arizona,-0.7525249926
+Tamir Jones,Georgia State,-0.7544433896
+D.J. Brown,Northern Illinois,-0.7563699817
+Marlon Watts,Louisiana Tech,-0.7662211831
+James Price,Wyoming,-0.777281015
+Emanuel Thompson,Troy,-0.7773606474
+Armanti Foreman,Texas,-0.7793383664
+Ammon Barker,Hawaii,-0.7831549364
+Dijon Paschal,Arkansas State,-0.7883087768
+Deddrick Thomas,Mississippi State,-0.7986148028
+Sean McKeon,Michigan,-0.7987866087
+Keyion Dixon,Connecticut,-0.8069820503
+Darren Woods Jr,UNLV,-0.8077716122
+Austin Maloney,Florida International,-0.8087952912
+Ravian Pierce,Syracuse,-0.8101115617
+Nigel Carter,Tulsa,-0.8296619506
+Grant Perry,Michigan,-0.8296663896
+Reggie Hemphill-Mapps,Texas,-0.8308063351
+Mark Quattlebaum,Charlotte,-0.8325501852
+Dawson Knox,Ole Miss,-0.8350560287
+KaVontae Turpin,Texas Christian,-0.840747384
+Richie James,Middle Tennessee State,-0.8483189239
+Jamire Calvin,Washington State,-0.848507598
+Daniel Helm,Duke,-0.8545210907
+Malik Henry,Georgia Southern,-0.858157667
+Xavier Lane,Western Kentucky,-0.8616020817
+Jordan Cunningham,North Carolina,-0.8621071947
+Matt Eaton,Iowa State,-0.8674999877
+Rueben Mwehla,Idaho,-0.8740096959
+Ethan Wolf,Tennessee,-0.8783260987
+Dezmon Patmon,Washington State,-0.8833456839
+Kendal Keys,UNLV,-0.8907675596
+Jaelon Darden,North Texas,-0.9107192803
+Johnathan Lloyd,Duke,-0.9117439913
+Jonah Trinnaman,Brigham Young,-0.9212824707
+Jordan McCray,South Alabama,-0.9233282567
+Justin Holmes,San Jose State,-0.9318826339
+Eric Cooper,Central Michigan,-0.9382992873
+Aaron Fuller,Washington,-0.9432201442
+Devin Butler,Syracuse,-0.9555789957
+Tre Walker,San Jose State,-0.9584288222
+Tyler Watts,Texas State,-0.9625497553
+Quayvon Skanes,Connecticut,-0.9649162261
+Michael Jacquet,Louisiana,-0.9720174282
+Austin Roberts,UCLA,-0.9768428875
+Joe Reed,Virginia,-0.9775932361
+Lorenzo Joe,Texas,-0.9852495488
+Dalton Schultz,Stanford,-0.9964109887
+Xavier Brown,Louisiana-Monroe,-1.000734698
+Donovan Peoples-Jones,Michigan,-1.003047576
+Jeff Smith,Boston College,-1.003270054
+Riley Miller,Ball State,-1.008104592
+Samson Nacua,Utah,-1.011477242
+Ari Werts,Georgia State,-1.014325023
+Keelan Ewaliko,Hawaii,-1.019233241
+Malik Turner,Illinois,-1.025980673
+Isaiah Hodgins,Oregon State,-1.03145404
+Mike Dudek,Illinois,-1.03263986
+Tony Gaiter IV,Florida International,-1.035933671
+Gregory Hogan,New Mexico State,-1.039541772
+Donald Gray,Mississippi State,-1.040551998
+Jerome Washington,Rutgers,-1.043800315
+Greg Campbell Jr.,UTSA,-1.044106218
+Chase Harrell,Kansas,-1.055022939
+Deondre Farrier,East Carolina,-1.055760676
+Chris Davis,New Mexico,-1.062302962
+Conner Cramer,New Mexico State,-1.064285265
+Evan Butts,Virginia,-1.093323814
+Bryce Wolma,Arizona,-1.123961982
+Brandon Fritts,North Carolina,-1.126591363
+Maurice Ffrench,Pitt,-1.1298947
+Josh Oliver,San Jose State,-1.135504271
+Tyler Mabry,Buffalo,-1.138160399
+Ronnie Turner Jr.,UAB,-1.141514556
+Tony Nicholson,Baylor,-1.155544261
+Keith Gavin,Florida State,-1.155636524
+Matt Sokol,Michigan State,-1.156958231
+Jesse Jackson,Mississippi State,-1.165775642
+Ventell Bryant,Temple,-1.196974645
+Deshaunte Jones,Iowa State,-1.206783617
+Talon Shumway,Brigham Young,-1.209035103
+Nolan Givan,Ball State,-1.21453418
+Kameron McKnight,Louisiana Tech,-1.219472844
+Terry Wright,Purdue,-1.226288917
+Kelvin Smith,North Texas,-1.226610354
+Jaron Johnson,Eastern Michigan,-1.270531617
+Tyraiq Beals,Connecticut,-1.28788156
+Cameron Green,Northwestern,-1.293952716
+Terry Juniel,UTEP,-1.330782694
+Dominique Heath,Kansas State,-1.331052177
+Troy McCormick,Utah,-1.344220445
+Connor Wedington,Stanford,-1.417810267
+Marcus Armstrong-Brown,Hawaii,-1.44416996
+Tyler Cogswell,Cincinnati,-1.478815793
+Isaiah Jones,Southern Mississippi,-1.487977808
+Andrew Celis,Nevada,-1.496076175
+Jerrod Heard,Texas,-1.505170883
+Ryan Schadler,Kansas,-1.519354448
+CJ O'Grady,Arkansas,-1.529673839
+John Leday,Houston,-1.687836856
+Quan Hampton,Kansas,-1.727322982
